@@ -5,7 +5,8 @@ public class Main {
 	//Circle();
 	//Person();
 	//Point();
-	Animal();
+	//Animal();
+		PointS();
 }
 static void Circle () {
 	  // Declare and allocate a new instance of cylinder
@@ -74,6 +75,34 @@ static void Animal() {
     System.out.println(d1);
     d1.greets();
     d1.greets(d2);
+}
+static void PointS() {
+	
+    // Test de Point
+    Point p1 = new Point(2.0f, 3.0f);
+    System.out.println("Point p1: " + p1);
+
+    p1.setX(5.0f);
+    p1.setY(7.0f);
+    System.out.println("Point p1 après modification: " + p1);
+
+    float[] coords = p1.getXY();
+    System.out.println("Coordonnées de p1: x=" + coords[0] + ", y=" + coords[1]);
+
+    // Test de MovablePoint
+    MovablePoint mp1 = new MovablePoint(1.0f, 2.0f, 0.5f, 1.0f);
+    System.out.println("\nMovablePoint mp1: " + mp1);
+
+    // Déplacement
+    mp1.move();
+    System.out.println("Après move(): " + mp1);
+
+    // Modifier la vitesse
+    mp1.setSpeed(2.0f, 3.0f);
+    System.out.println("Après changement de vitesse: " + mp1);
+
+    mp1.move();
+    System.out.println("Après deuxième move(): " + mp1);
 }
 }
 
