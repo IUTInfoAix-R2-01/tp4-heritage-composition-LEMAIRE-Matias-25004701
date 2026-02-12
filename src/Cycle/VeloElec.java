@@ -1,4 +1,4 @@
-package persoJDR;
+package Cycle;
 
 public class VeloElec extends Velo {
 	  private static double DEFAULT_FACTEUR_PUISSANCE_MOTEUR = 15.0;

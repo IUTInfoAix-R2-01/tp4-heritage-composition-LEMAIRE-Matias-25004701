@@ -1,4 +1,5 @@
-package persoJDR;
+package Cycle;
+
 
 public class Main {
 	 public static void main(String[] args) {
@@ -27,6 +28,5 @@ public class Main {
 		        System.out.println(veloElecDefaut);
 		        System.out.println("Puissance : " + veloElecDefaut.getPuissance(2.5));
 	}
-		
 }
 
