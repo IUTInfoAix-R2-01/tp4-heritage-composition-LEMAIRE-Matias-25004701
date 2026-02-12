@@ -4,7 +4,8 @@ public class Main {
 	public static void main(String[] args) {
 	//Circle();
 	//Person();
-	Point();
+	//Point();
+	Animal();
 }
 static void Circle () {
 	  // Declare and allocate a new instance of cylinder
@@ -52,5 +53,28 @@ static void Point() {
 	 System.out.println(point2D);
 	 System.out.println(point3D);
 }
+static void Animal() {
+	// Test Animal
+    Animal a = new Animal("oiseau");
+    System.out.println(a);
+
+    // Test Mammal
+    Mammal m = new Mammal("Mammal");
+    System.out.println(m);
+
+    // Test Cat
+    Cat c = new Cat("Kitty");
+    System.out.println(c);
+    c.greets();
+
+    // Test Dog
+    Dog d1 = new Dog("Rex");
+    Dog d2 = new Dog("Buddy");
+
+    System.out.println(d1);
+    d1.greets();
+    d1.greets(d2);
 }
+}
+
 
