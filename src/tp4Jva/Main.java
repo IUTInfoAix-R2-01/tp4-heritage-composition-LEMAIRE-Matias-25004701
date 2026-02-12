@@ -3,7 +3,8 @@ package tp4Jva;
 public class Main {
 	public static void main(String[] args) {
 	//Circle();
-	Person();
+	//Person();
+	Point();
 }
 static void Circle () {
 	  // Declare and allocate a new instance of cylinder
@@ -43,6 +44,13 @@ static void Person () {
 	System.out.println(student);
 	System.out.println(staff);
 	
+}
+static void Point() {
+	 Point2D point2D = new Point2D (2.5f, 3.5f);
+	 Point3D point3D = new Point3D (1.5f,2.3f, 1.9f);
+	 
+	 System.out.println(point2D);
+	 System.out.println(point3D);
 }
 }
 
